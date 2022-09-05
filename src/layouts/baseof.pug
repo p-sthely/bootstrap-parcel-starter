@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		block title
+			title "Bootstrap w/ Parcel"
+		link(rel="stylesheet" href="/src/scss/main.scss")
+		script(type="module" src="/src/js/main.js")
+	body
+		.container-fluid.p-md-4
+			include ../components/Navbar.pug
+		.container.py-5.w-md-75.w-xl-50.ms-0
+			block content
+
